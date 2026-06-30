@@ -1,0 +1,6 @@
+{
+  "name": "小胰宝社区 PancrePal",
+  "description": "小胰宝社区 (PancrePal | a member of XtraCARE) 是一款专为胰腺癌患者及家属打造的高端数字化患者管理与互助平台，色系完美调整为绿色，集成了智能AI康复顾问、临床试验导航、早期症状评估与科学膳食营养计算等核心模块，全面赋能生命关怀。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

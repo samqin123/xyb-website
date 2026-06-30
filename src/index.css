@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Morandi Muted Sage Green Palette (Robot Base Color) */
+  --color-emerald-50: #f1f7f6;
+  --color-emerald-100: #e0ecea;
+  --color-emerald-200: #b9ded7;
+  --color-emerald-300: #8cc9be;
+  --color-emerald-400: #5eb0a3;
+  --color-emerald-500: #419488;
+  --color-emerald-600: #33766c;
+  --color-emerald-700: #2b6059;
+  --color-emerald-800: #244e49;
+  --color-emerald-900: #1d3e3a;
+  --color-emerald-950: #0f2220;
+
+  /* Warm Coral Orange Palette (Robot Heart/Accent Color) */
+  --color-orange-50: #fff6f0;
+  --color-orange-100: #ffede0;
+  --color-orange-200: #ffd6bf;
+  --color-orange-300: #ffb08c;
+  --color-orange-400: #ff7e4d;
+  --color-orange-500: #f05e23;
+  --color-orange-600: #d64b14;
+  --color-orange-700: #a1350a;
+}
+
+/* Custom styles for high-fidelity clone of PanCan in emerald/green style */
+html, body, #root {
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: #fcfdfc;
+  color: #1e293b;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Accent glassmorphism effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Custom subtle animations */
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.05); opacity: 0.35; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
